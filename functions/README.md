@@ -1,6 +1,6 @@
 # PYTHON FUNCTIONS: EXERCISES
 
-### PROBLEM 0: `*`
+### PROBLEM 0: "list_of_powers" `*`
 
 - (refresher) Write a function that can take 2 **integers**, `upper_bound` and `power` and return the **list** 
   of all powers of integers in the **range** between `0` (inclusive) and `upper_bound` (exclusive).
@@ -30,7 +30,7 @@ def list_of_powers(upper_bound: int, power: int) -> List[int]:
     """
 ```
 
-### PROBLEM 1: `*`
+### PROBLEM 1: "magic_triangle" `*`
 
 - Create the function that takes an integer `triangle_height` and a string `triangle_brick`, 
 and create function that prints a triangle of a given `triangle_height` composed of `triangle_brick`s.
@@ -79,7 +79,7 @@ def magic_triangle(triangle_height: int, triangle_brick: str):
 
 ```
 
-### PROBLEM 2: `**`
+### PROBLEM 2: "exchanger" `**`
 
 1. We want to create a function that take:
   - a `list of integers` (of any size) let's call it `in_list`
