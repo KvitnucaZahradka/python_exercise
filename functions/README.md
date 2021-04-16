@@ -125,3 +125,66 @@ def exchanger(in_list: List[int], index: int, new_value: int):
     """
 ```
 
+### PROBLEM 3: "randomial": `***`
+
+- This function is a funny generalization of normal factorial. 
+  
+- The normal factorial is a function, usually denoted by `!`.
+
+- The function `!` (factorial) takes a **non-negative integer** `n` and returns another non-negative integer 
+  obtained as a multiplication of all the integers in the range between 1 and `n`.
+  
+- For example `3!` is a number given by: `1 * 2 * 3`.
+
+- The normal factorial `!` is also defined for `0` as `0! = 1`.
+
+- In this exercise we will create a funny randomized generalization of a factorial.
+
+- This function takes:
+  1. an **integer** `n`
+  2. an **integer** replacement value `replacer`
+  
+- This function returns a value that is given by the following procedure:
+  1. in the normal factorial calculation of `n!` (that is again given as: `1 * 2 * 3 * ... * n`)
+  2. replace random integers with a `replacer` value.
+  
+- For example:
+  1. If I have `6!`, that is given as `1 * 2 * 3 * 4 * 5 * 6`
+  2. and my `replacer` is given by `replacer = 77`
+  3. then, I want to calculate `randomial(6, 77)`
+  4. that result might be for example given by: `1 * 77 * 3 * 4 * 77 * 6`.
+  5. **EXTREMELY IMPORTANT** this replacement must be random every time.
+  6. This means: in the next run of `randomial(6, 77)` I might get the value that 
+     is given by: `1 * 2 * 3 * 77 * 5 * 6`.
+  7. Another time `randomial(6, 77)` might give value: `77 * 77 * 77 * 77 * 5 * 6`
+  
+- Hint: the build in module called `random` might be of help. Google "python random stackoverflow"
+
+- Edge Cases: again think about edge cases for this function! What can break this function, what are 
+some input values, that can cause some unexpected behavior.
+
+```Python
+
+def randomial(n: int, replacer: int) -> int:
+    """This function takes an non-negative integer `n` and a non-negative integer `replacer`. It 
+    will calculate an integer whose value is given by a product of an integers in range, but some of them
+     are randomly replaced by a `replacer`.
+     
+    Parameters
+    ---------- 
+    n: int
+        is the randomial input non-negative integer
+    
+    replacer: int
+        is a non-negative integer that replaces random values in the factorial calculation.
+        
+    Returns
+    -------
+    int
+        is the integer obtained by randomly replacing values in factorial calculation with a replacer.
+      
+    """
+```
+
+
+
