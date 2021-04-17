@@ -81,7 +81,7 @@ def magic_triangle(triangle_height: int, triangle_brick: str):
 
 ### PROBLEM 2: "exchanger" `**`
 
-1. We want to create a function that take:
+1. We want to create a function that takes:
   - a `list of integers` (of any size) let's call it `in_list`
   - an `index` (an integer, that is guaranteed to be between `0` and `length of in_list minus 1`)
   - a `new_value`, also an integer.
