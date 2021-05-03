@@ -186,5 +186,39 @@ def randomial(n: int, replacer: int) -> int:
     """
 ```
 
+### PROBLEM 4: "recursive factorial": `***`
+
+- This problem would require a bit of the Googling.
+
+- We want to write a **normal** mathematical factorial (!! not a randomial !!) 
+
+- But this time in a way that uses recursion. The recursion is a very useful programming technique
+where the function calls itself.
+  
+- We have not covered this yet, but the factorial calculation using recursion is a book example
+for the recursion. That is why I am leaving this example for Googling + I will explain it in person.
+
+```python
+
+def recursive_factorial(n: int) -> int:
+  """This function takes a non-negative integer and calculates it's factorial.
+  This function however should be written in recursive form.
+  
+  Parameters
+  ----------
+  n: int 
+    is a non-negative integer
+  
+  Returns
+  -------
+  int
+    is a positive innteger.
+  
+  """
+
+
+```
+
+
 
 
